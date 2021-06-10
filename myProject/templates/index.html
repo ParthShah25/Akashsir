@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="header">
+        <form action="index" method="get">
+        <a href="index.html" id="logo">Career Guidance</a>
+        <ul>
+          <li class="selected"><a href="/">Home</a></li>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="faq">FAQ</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="getintouch">Get in touch</a></li>
+          <li><a href="account/signin">LogIn</a></li>
+          <li><a href="account/signup">Register</a></li>
+        </ul>
+      </div>
+      <div class="body">
+        <div id="featured">
+          <h3>Guiding path to future...</h3>
+          <p>
+            Career guidance is an essential factor for identifying the real
+            potential and guiding students towards a right career path. Students
+            need to know the importance of career coaching and right guidance
+            before they are going to choose an academic stream after taking the
+            board exams. Career guidance will be helpful choosing a career goal,
+            planning and give a direction to students for a better future ahead.
+          </p>
+          <form action="blog" method="get">
+          <input
+            type="button"
+            value="Read more"
+            onClick="parent.location='blog'"
+          />
+        </form>
+        </div>
+        <ul class="blog">
+          <li>
+            <div>
+              <a href="blog"><img src="{% static 'images/blockchain.jpg' %}" alt="" /></a>
+              <p>
+                Blockchain seems complicated, and it definitely can be, but its
+                core concept is really quite simple. A blockchain is a type of
+                database.
+              </p>
+              <a href="blog"></a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="blog"><img src="{% static 'images/data-science1.jpg' %}" alt=""
+              /></a>
+              <p>
+                Data science is related to data mining, machine learning and big
+                data.Data science is a "concept to unify statistics, data
+                analysis, informatics, and their related methods".
+              </p>
+              <a href="blog"></a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="blog"><img src="{% static 'images/cloudcomputing.png' %}" alt=""
+              /></a>
+              <p>
+                Cloud computing is the on-demand availability of computer system
+                resources, especially data storage and computing power, without
+                direct active management by the user.
+              </p>
+              <a href="blog"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer">
+        <ul>
+          <li class="selected"><a href="/">Home</a></li>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="faq">FAQ</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="getintouch">Get in touch</a></li>
+          <li><a href="account/signin">LogIn</a></li>
+          <li><a href="account/signup">Register</a></li>
+        </ul>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>

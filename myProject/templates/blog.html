@@ -1,0 +1,342 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+    rel="stylesheet"
+  />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Career Guidance/Blog page</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+  
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <form action="blog" method="get">
+      <a href="'index.html" id="logo">Career Guidance</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="selected"><a href="blog">Blog</a></li>
+        <li><a href="faq">FAQ</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="getintouch">Get in touch</a></li>
+        <li><a href="account/signin">LogIn</a></li>
+        <li><a href="account/signup">Register</a></li>
+      </ul>
+    </div>
+    <div class="body">
+      <ul>
+        <li>
+          <div class="featured">
+            <img src="{% static 'images/blockchain.jpg' %}" alt="" />
+
+          </div>
+          
+          <h1>Block Chain</h1>
+          <p>
+            Blockchain, sometimes referred to as Distributed Ledger Technology
+            (DLT), makes the history of any digital asset unalterable and
+            transparent through the use of decentralization and cryptographic
+            hashing. A simple analogy for understanding blockchain technology
+            is a Google Doc. When we create a document and share it with a
+            group of people, the document is distributed instead of copied or
+            transferred. This creates a decentralized distribution chain that
+            gives everyone access to the document at the same time. No one is
+            locked out awaiting changes from another party, while all
+            modifications to the doc are being recorded in real-time, making
+            changes completely transparent.
+            <br />
+            Blockchain is an especially promising and revolutionary technology
+            because it helps reduce risk, stamps out fraud and brings
+            transparency in a scaleable way for myriad uses.
+            <br />
+            <br />
+            Blockchain consists of three important concepts: blocks, nodes and
+            miners.<br />
+            <br />
+            <b>Blocks :</b>
+            Every chain consists of multiple blocks and each block has three
+            basic elements:
+            <br />
+            <br />-The data in the block. <br />-A 32-bit whole number called
+            a nonce. The nonce is randomly generated when a block is created,
+            which then generates a block header hash. <br />-The hash is a
+            256-bit number wedded to the nonce. It must start with a huge
+            number of zeroes (i.e., be extremely small). <br />When the first
+            block of a chain is created, a nonce generates the cryptographic
+            hash. The data in the block is considered signed and forever tied
+            to the nonce and hash unless it is mined.<br /><br />
+            <b>Miners:</b> <br />Miners create new blocks on the chain through
+            a process called mining. <br />In a blockchain every block has its
+            own unique nonce and hash, but also references the hash of the
+            previous block in the chain, so mining a block isn't easy,
+            especially on large chains.<br /><br />
+            Miners use special software to solve the incredibly complex math
+            problem of finding a nonce that generates an accepted hash.
+            Because the nonce is only 32 bits and the hash is 256, there are
+            roughly four billion possible nonce-hash combinations that must be
+            mined before the right one is found. When that happens miners are
+            said to have found the "golden nonce" and their block is added to
+            the chain. <br /><br />Making a change to any block earlier in the
+            chain requires re-mining not just the block with the change, but
+            all of the blocks that come after. This is why it's extremely
+            difficult to manipulate blockchain technology. Think of it is as
+            "safety in math" since finding golden nonces requires an enormous
+            amount of time and computing power.<br /><br />
+            When a block is successfully mined, the change is accepted by all
+            of the nodes on the network and the miner is rewarded financially.
+            <br /><br />
+            <b>Nodes:</b>
+            <br />
+            One of the most important concepts in blockchain technology is
+            decentralization. No one computer or organization can own the
+            chain. Instead, it is a distributed ledger via the nodes connected
+            to the chain. Nodes can be any kind of electronic device that
+            maintains copies of the blockchain and keeps the network
+            functioning.<br /><br />
+            Every node has its own copy of the blockchain and the network must
+            algorithmically approve any newly mined block for the chain to be
+            updated, trusted and verified. Since blockchains are transparent,
+            every action in the ledger can be easily checked and viewed. Each
+            participant is given a unique alphanumeric identification number
+            that shows their transactions.
+          </p>
+          <br>
+          <p><strong>Here are some paid courses, free coursses and blogs related to block chain : </strong></p>
+          <p>Free courses on edurekha : <a href =  "https://www.youtube.com/watch?v=QCvL-DWcojc"> https://www.youtube.com/watch?v=QCvL-DWcojc</a></p>
+          <p>Paid courses on coursera : <br>Beginner:<a href = "https://www.coursera.org/specializations/blockchain-revolution-enterprise"> https://www.coursera.org/specializations/blockchain-revolution-enterprise</a>
+          <br>Intermediate : <a href = "https://www.coursera.org/specializations/blockchain"> https://www.coursera.org/specializations/blockchain</a>
+          </p>
+          <p>Paid courses on udemy : <a href = "https://www.udemy.com/course/build-your-blockchain-az/"> https://www.udemy.com/course/build-your-blockchain-az/</a>
+          
+          </p>
+          <p>Blog : <a href =  "https://builtin.com/blockchain">https://builtin.com/blockchain </a></p>
+          
+          
+        </li>
+        <hr />
+        <li>
+          <div class="featured">
+            <img src="{% static 'images/data-science1.jpg' %}" alt="" />
+          </div>
+
+          <h1>Data Science</h1>
+          <p>
+            Data science is an inter-disciplinary field that uses scientific
+            methods, processes, algorithms and systems to extract knowledge
+            and insights from structured and unstructured data and apply
+            knowledge and actionable insights from data across a broad range
+            of application domains. Data science is related to data mining,
+            machine learning and big data.Data science is a "concept to unify
+            statistics, data analysis, informatics, and their related methods"
+            in order to "understand and analyze actual phenomena" with data.
+            <br /><br />It uses techniques and theories drawn from many fields
+            within the context of mathematics, statistics, computer science,
+            information science, and domain knowledge. Turing award winner Jim
+            Gray imagined data science as a "fourth paradigm" of science
+            (empirical, theoretical, computational and now data-driven) and
+            asserted that "everything about science is changing because of the
+            impact of information technology" and the data deluge.
+            <br /><br />
+            Data science involves a plethora of disciplines and expertise
+            areas to produce a holistic, thorough and refined look into raw
+            data. Data scientists must be skilled in everything from data
+            engineering, math, statistics, advanced computing and
+            visualizations to be able to effectively sift through muddled
+            masses of information and communicate only the most vital bits
+            that will help drive innovation and efficiency.
+            <br />
+            <br />
+            Data scientists also rely heavily on artificial intelligence,
+            especially its subfields of machine learning and deep learning, to
+            create models and make predictions using algorithms and other
+            techniques. <br /><br />
+            <b>Data Science Uses:</b>
+            <br /><br />
+            <b>Healthcare</b><br />
+            Data science has led to a number of breakthroughs in the
+            healthcare industry. With a vast network of data now available via
+            everything from EMRs to clinical databases to personal fitness
+            trackers, medical professionals are finding new ways to understand
+            disease, practice preventive medicine, diagnose diseases faster
+            and explore new treatment options.
+            <br /><br />
+            <b>Self-Driving Cars</b>
+            <br />
+            Tesla, Ford and Volkswagen are all implementing predictive
+            analytics in their new wave of autonomous vehicles. These cars use
+            thousands of tiny cameras and sensors to relay information in
+            real-time. Using machine learning, predictive analytics and data
+            science, self-driving cars can adjust to speed limits, avoid
+            dangerous lane changes and even take passengers on the quickest
+            route. <br /><br />
+            <b>Logistics</b>
+
+            <br />
+            UPS turns to data science to maximize efficiency, both internally
+            and along its delivery routes. The company’s On-road Integrated
+            Optimization and Navigation (ORION) tool uses data science-backed
+            statistical modeling and algorithms that create optimal routes for
+            delivery drivers based on weather, traffic, construction, etc.
+            It’s estimated that data science is saving the logistics company
+            up to 39 million gallons of fuel and more than 100 million
+            delivery miles each year.
+            <br /><br />
+            <b>Finance</b><br />
+            Machine learning and data science have saved the financial
+            industry millions of dollars, and unquantifiable amounts of time.
+            For example, JP Morgan’s Contract Intelligence (COiN) platform
+            uses Natural Language Processing (NLP) to process and extract
+            vital data from about 12,000 commercial credit agreements a year.
+            Thanks to data science, what would take around 360,000 manual
+            labor hours to complete is now finished in a few hours.
+            Additionally, fintech companies like Stripe and Paypal are
+            investing heavily in data science to create machine learning tools
+            that quickly detect and prevent fraudulent activities.
+          </p>
+          <p><strong>Here are some paid courses, free coursses and blogs related to data science : </strong></p>
+          <p>Free courses on edurekha: <a href =  "https://www.youtube.com/watch?v=-ETQ97mXXF0"> https://www.youtube.com/watch?v=-ETQ97mXXF0</a></p>
+          <p>Paid courses on coursera from university of Michigan : <a href = "https://www.coursera.org/degrees/master-of-applied-data-science-umich"> https://www.coursera.org/degrees/master-of-applied-data-science-umich</a>
+          
+          </p>
+          <p>Paid courses on udemy : <a href = "https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/"> https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/</a>
+          
+          </p>
+          <p>Blog : <a href =  "https://ischoolonline.berkeley.edu/data-science/what-is-data-science/">https://ischoolonline.berkeley.edu/data-science/what-is-data-science/ </a></p>
+          
+        </li>
+        <hr />
+        <li>
+          <div class="featured">
+            <img src="{% static 'images/cloudcomputing.png' %}" alt="" />
+          </div>
+
+          <h1>Cloud Computing</h1>
+          <p>
+            Cloud computing is the on-demand availability of computer system
+            resources, especially data storage (cloud storage) and computing
+            power, without direct active management by the user.
+            <br /><br />
+            The term is generally used to describe data centers available to
+            many users over the Internet. Large clouds, predominant today,
+            often have functions distributed over multiple locations from
+            central servers. If the connection to the user is relatively
+            close, it may be designated an edge server.
+            <br /><br />
+            Cloud computing relies on sharing of resources to achieve
+            coherence and economies of scale. Advocates of public and hybrid
+            clouds note that cloud computing allows companies to avoid or
+            minimize up-front IT infrastructure costs. Proponents also claim
+            that cloud computing allows enterprises to get their applications
+            up and running faster, with improved manageability and less
+            maintenance, and that it enables IT teams to more rapidly adjust
+            resources to meet fluctuating and unpredictable demand, providing
+            the burst computing capability: high computing power at certain
+            periods of peak demand.
+            <br />
+          <p>
+            Cloud computing is a general term for anything that involves
+            delivering hosted services over the internet. These services are
+            divided into three main categories: infrastructure as a service
+            (IaaS), platform as a service (>PaaS) and software as a service (
+            SaaS).
+          </p>
+          <p>A cloud can be private or public. A public cloud sells services to
+            anyone on the internet. A private cloud is a proprietary network or
+            a data center that supplies hosted services to a limited number of
+            people, with certain access and permissions settings. Private or
+            public, the goal of cloud computing is to provide easy, scalable
+            access to computing resources and IT services.</p>
+          <p>Cloud computing works by allowing client devices to access data
+            over the internet, from remote servers, databases and computers.</p>
+          <p>An internet network connection links the front end (includes the
+            accessing client device, browser, network and cloud software
+            applications) with the back end, which consists of databases,
+            servers and computers). The back end functions as a repository,
+            storing data that is accessed by the front end.</p>
+          <p>Communications between the front and back ends are managed by a
+            central server. The central server relies on protocols to facilitate
+            the exchange of data. The central server uses both software and
+            middleware to manage connectivity between different client devices
+            and cloud servers. Typically, there will be a dedicated server for
+            each individual application.</p>
+          <p><b>Examples of cloud computing include:</b></p>
+          <p><strong>Google Docs, Microsoft Office 365:&nbsp;</strong>Users can
+            access Google Docs and Microsoft Office 365 through the internet.
+            Users can be more productive because they can access work
+            presentations and spreadsheets stored in the cloud at any time from
+            anywhere on any device.</p>
+          <p><strong>Email, Calendar, Skype, WhatsApp:</strong>&nbsp;Emails,
+            calendars, Skype and WhatsApp take advantage of the cloud's ability
+            to provide users with access to data remotely so they can access
+            their personal data on any device, whenever and wherever they want.
+          </p>
+          <p><strong>Zoom:</strong> Zoom is a cloud-based software platform for
+            video and audio conferencing that records meetings and saves them to
+            the cloud, enabling users to access them anywhere and at any time.
+          </p>
+          <p><strong>AWS Lambda:</strong> Lambda allows developers to run code
+            for applications or back-end services without having to provision or
+            manage servers. The pay-as-you-go model constantly scales with an
+            organization to accommodate real-time changes in data usage and data
+            storage.</p>
+          <p><b> Types of Cloud Computing Services:</b></p>
+          <p>As mentioned previously, cloud computing can be separated into three
+          general service delivery categories:</p>
+          <p><strong>Infrastructure as a service</strong>. IaaS providers, such
+            as AWS, supply a&nbsp;virtual
+              server</a>&nbsp;instance and storage, as well as APIs that let
+            users migrate workloads to a virtual machine (VM).
+            Users have an allocated storage capacity and can start, stop, access
+            and configure the VM and storage as desired. IaaS providers offer
+            small, medium, large, extra-large and memory- or compute-optimized
+            instances, in addition to allowing customization of instances, for
+            various workload needs.</p>
+          <p><strong>Platform as a service</strong>. In the PaaS model, cloud
+            providers host development tools on their infrastructures. Users
+            access these tools over the internet using APIs, web portals&nbsp;or
+            gateway software. PaaS is used for general software development, and
+            many PaaS providers host the software after it's developed. Common
+            PaaS providers include Salesforce's Lightning Platform, AWS Elastic
+            Beanstalk and Google App Engine.</p>
+          <p><strong>Software as a service</strong>. SaaS is a distribution
+            model that delivers software applications over the internet; these
+            applications are often called&nbsp;web
+              services. Users can access SaaS applications and services from
+            any location using a computer or mobile device that has internet
+            access. In the SaaS model, users gain access to application software
+            and databases. One common example of a SaaS application is
+            Microsoft&nbsp;Office 365&nbsp;for productivity and email services.
+          </p>
+          <p><strong>Here are some paid courses, free coursses and blogs related to cloud computing : </strong></p>
+          <p>Free courses on edurekha: <a href =  "https://www.youtube.com/watch?v=2LaAJq1lB1Q"> https://www.youtube.com/watch?v=2LaAJq1lB1Q</a></p>
+          <p>Paid courses on coursera : <a href = "https://www.coursera.org/degrees/unt-online-bachelor-completion">https://www.coursera.org/degrees/unt-online-bachelor-completion</a>
+          
+          </p>
+          <p>Paid courses on udemy : <a href = "https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/"> https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/</a>
+          
+          </p>
+          <p>Blog from Microsoft Azure : <a href =  "https://azure.microsoft.com/en-in/overview/what-is-cloud-computing/">https://azure.microsoft.com/en-in/overview/what-is-cloud-computing/ </a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="selected"><a href="blog">Blog</a></li>
+          <li><a href="faq">FAQ</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="getintouch">Get in touch</a></li>
+          <li><a href="account/signin">LogIn</a></li>
+          <li><a href="account/signup">Register</a></li>
+        </ul>
+    </div>
+  </form>
+  </div>
+</body>
+</html>
